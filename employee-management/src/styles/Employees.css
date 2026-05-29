@@ -1,0 +1,169 @@
+.employees-container {
+  padding: 20px;
+  min-height: calc(100vh - 70px);
+  background: rgba(255, 255, 255, 0.9);
+  color: #111111;
+}
+
+.employees-container h2 {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.add-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.add-form input,
+.add-form select {
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid #cccccc;
+  padding: 10px 12px;
+  border-radius: 4px;
+  min-width: 180px;
+}
+
+.add-form input.error,
+.add-form select.error {
+  border-color: #d9534f;
+}
+
+.add-form button {
+  background: #222222;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 15px;
+}
+
+.emp-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.emp-table th,
+.emp-table td {
+  padding: 12px 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.emp-table thead th {
+  background: #f4f4f4;
+  color: #111111;
+}
+
+.emp-table tbody tr:nth-child(odd) {
+  background: #fbfbfb;
+}
+
+.emp-table tbody tr:hover {
+  background: #f0f0f0;
+}
+
+.high-salary {
+  color: #d9534f;
+  font-weight: 600;
+}
+
+.alert-distance {
+  color: #c67c00;
+  font-weight: 600;
+}
+
+.edit-inline {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.edit-inline input,
+.edit-inline select {
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid #cccccc;
+  padding: 6px 8px;
+  border-radius: 3px;
+  min-width: 100px;
+}
+
+.edit-inline button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  background: #222222;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.del-btn,
+.copy-btn {
+  background: transparent;
+  border: 1px solid #cccccc;
+  color: #111111;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.del-btn:hover {
+  background: #ffe6e6;
+  border-color: #d9534f;
+}
+
+.copy-btn:hover {
+  background: #e6ffe6;
+  border-color: #5cb85c;
+}
+
+@media (max-width: 768px) {
+  .employees-container {
+    padding: 15px;
+  }
+
+  .employees-container h2 {
+    font-size: 24px;
+  }
+
+  .add-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .emp-table th,
+  .emp-table td {
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-form input,
+  .add-form select {
+    width: 100%;
+  }
+
+  .del-btn,
+  .copy-btn {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .edit-inline {
+    flex-wrap: wrap;
+  }
+}

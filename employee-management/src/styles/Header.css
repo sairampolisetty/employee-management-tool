@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #f8f8f8;
+  color: #111111;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: #111111;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.header h2 {
+  flex: 1;
+  font-size: 20px;
+  margin: 0;
+}
+
+.user-section {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.user-section span {
+  color: #333333;
+  font-size: 14px;
+}
+
+.logout-btn {
+  background: #222222;
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logout-btn:hover {
+  background: #444444;
+}
+
+@media (max-width: 480px) {
+  .user-section span {
+    display: none;
+  }
+}
